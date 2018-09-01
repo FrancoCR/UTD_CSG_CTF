@@ -20,6 +20,7 @@
         },
         methods: {
             login() {
+                //TO_DO check for SQL injection and a few other things
                 if(this.input.username != "" && this.input.password != "") {
                     if(this.input.username == this.$parent.mockAccount.username && this.input.password == this.$parent.mockAccount.password) {
                         this.$emit("authenticated", true);
