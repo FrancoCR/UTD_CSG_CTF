@@ -25,7 +25,7 @@ export default new Router({
 import Vue from 'vue'
 import Router from 'vue-router'
 import LoginComponent from "./views/login.vue"
-import SecureComponent from "./views/secure.vue"
+import SecureComponent from "./views/adminLoggedIn.vue"
 
 Vue.use(Router)
 
@@ -43,8 +43,8 @@ export default new Router({
             component: LoginComponent
         },
         {
-            path: "/secure",
-            name: "secure",
+            path: "/adminLoggedIn",
+            name: "adminLoggedIn",
             component: SecureComponent
         }
     ]
