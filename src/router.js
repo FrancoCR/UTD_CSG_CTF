@@ -43,6 +43,11 @@ export default new Router({
             component: LoginComponent
         },
         {
+            path: "/ghostbusters",
+            name: "ghostbusters",
+            component: SecureComponent
+        },
+        {
             path: "/adminLoggedIn",
             name: "adminLoggedIn",
             component: SecureComponent
